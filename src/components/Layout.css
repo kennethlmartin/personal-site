@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+}
+
+main {
+  height: 100vh;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.bg-upper {
+  height: 50vh;
+  width: 100%;
+}
+
+.bg-lower {
+  background-color: #CFE8E4;
+  height: 50vh;
+  width: 100%;
+}
+
+.content-wrapper {
+  align-items: center;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.avatar-wrapper {
+  border-radius: 50%;
+  border: 5px solid #FFF;
+  width: 250px;
+}

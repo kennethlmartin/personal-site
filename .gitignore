@@ -1,0 +1,10 @@
+# https://git-scm.com/docs/gitignore
+
+.DS_Store
+.env
+.nodemon-find-ref
+.*cache
+*.log
+*.swp
+/public
+node_modules/
