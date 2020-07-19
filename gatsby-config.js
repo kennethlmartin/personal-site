@@ -6,6 +6,8 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-react-helmet',
+    'gatsby-plugin-emotion',
+    'gatsby-plugin-theme-ui',
     {
       resolve: 'gatsby-plugin-manifest',
       options: {

@@ -1,3 +1,7 @@
+/**
+ * @module pages/404
+ */
+
 import React from 'react';
 
 import Layout from '../components/Layout';
