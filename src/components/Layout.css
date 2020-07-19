@@ -1,22 +1,62 @@
-body {
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+p,
+pre,
+blockquote,
+figure,
+hr {
   margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:active,
+a:hover {
+  outline-width: 0;
+  text-decoration: underline;
+}
+
+img {
+  display: block;
 }
 
 main {
+  background: rgb(195,233,228);
+  background: linear-gradient(
+    0deg,
+    rgba(195, 233, 228, 0.75) 0%,
+    rgba(195, 233, 228, 0.75) 50%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(255, 255, 255, 1) 100%);
   height: 100vh;
   position: relative;
   text-align: center;
-  width: 100%;
-}
-
-.bg-upper {
-  height: 50vh;
-  width: 100%;
-}
-
-.bg-lower {
-  background-color: #CFE8E4;
-  height: 50vh;
   width: 100%;
 }
 
@@ -32,7 +72,8 @@ main {
   top: 0;
 }
 
-.avatar-wrapper {
+.avatar {
+  background-color: #FFF;
   border-radius: 50%;
   border: 5px solid #FFF;
   width: 250px;
