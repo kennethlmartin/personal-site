@@ -17,6 +17,13 @@ const Avatar = styled.img`
 
 const Content = styled.div`
   align-items: center;
+  background: rgb(195,233,228);
+  background: linear-gradient(
+    0deg,
+    rgba(195, 233, 228, 0.75) 0%,
+    rgba(195, 233, 228, 0.75) 50%,
+    rgba(255, 255, 255, 0) 50%,
+    rgba(255, 255, 255, 0) 100%);
   bottom: 0;
   display: flex;
   flex-direction: column;
@@ -24,6 +31,7 @@ const Content = styled.div`
   left: 0;
   position: absolute;
   right: 0;
+  text-align: center;
   top: 0;
 `;
 
