@@ -1,5 +1,5 @@
 /**
- * @module components/GlobalStyle
+ * @module GlobalStyle
  */
 
 import emotionNormalize from 'emotion-normalize';

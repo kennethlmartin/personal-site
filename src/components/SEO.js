@@ -1,5 +1,5 @@
 /**
- * @module components/SEO
+ * @module SEO
  */
 
 import React from 'react';
@@ -19,60 +19,51 @@ function SEO({ description, lang, meta, title }) {
           }
         }
       }
-    `
-  )
+    `,
+  );
 
-  const metaDescription = description || site.siteMetadata.description
+  const metaDescription = description || site.siteMetadata.description;
 
   return (
     <Helmet
       htmlAttributes={{
         lang,
       }}
+      meta={[{
+        content: metaDescription,
+        name: 'description',
+      }, {
+        content: title,
+        property: 'og:title',
+      }, {
+        content: metaDescription,
+        property: 'og:description',
+      }, {
+        content: 'website',
+        property: 'og:type',
+      }, {
+        content: 'summary',
+        name: 'twitter:card',
+      }, {
+        content: site.siteMetadata.author,
+        name: 'twitter:creator',
+      }, {
+        content: title,
+        name: 'twitter:title',
+      }, {
+        content: metaDescription,
+        name: 'twitter:description',
+      }].concat(meta)}
       title={title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
-      meta={[
-        {
-          name: 'description',
-          content: metaDescription,
-        },
-        {
-          property: 'og:title',
-          content: title,
-        },
-        {
-          property: 'og:description',
-          content: metaDescription,
-        },
-        {
-          property: 'og:type',
-          content: 'website',
-        },
-        {
-          name: 'twitter:card',
-          content: 'summary',
-        },
-        {
-          name: 'twitter:creator',
-          content: site.siteMetadata.author,
-        },
-        {
-          name: 'twitter:title',
-          content: title,
-        },
-        {
-          name: 'twitter:description',
-          content: metaDescription,
-        },
-      ].concat(meta)}
     />
   );
 };
 
 SEO.defaultProps = {
+  description: '',
   lang: 'en',
   meta: [],
-  description: '',
 };
 
 SEO.propTypes = {

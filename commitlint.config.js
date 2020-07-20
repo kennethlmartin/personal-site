@@ -1,5 +1,5 @@
 /**
- * @module commitlint.config.js
+ * @file commitlint.config.js
  * @see https://commitlint.js.org
  */
 

@@ -1,5 +1,5 @@
 /**
- * @module components/Layout
+ * @module Layout
  */
 
 import PropTypes from 'prop-types';

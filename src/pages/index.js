@@ -1,12 +1,12 @@
 /**
- * @module pages/index
+ * @module index
  */
 
 import React from 'react';
 import styled from '@emotion/styled';
 
 import Layout from '../components/Layout';
-import SEO from '../components/SEO';
+import Helmet from '../components/SEO';
 
 const Avatar = styled.img`
   background-color: #FFF;
@@ -37,7 +37,7 @@ const Content = styled.div`
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <Helmet title="Home" />
     <Content>
       <Avatar
         alt="avatar"
@@ -46,6 +46,6 @@ const IndexPage = () => (
       />
     </Content>
   </Layout>
-)
+);
 
-export default IndexPage
+export default IndexPage;
