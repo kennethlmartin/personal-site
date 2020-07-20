@@ -22,6 +22,13 @@ const plugins = [
     },
     resolve: 'gatsby-plugin-manifest',
   },
+  {
+    options: {
+      anonymize: true,
+      trackingId: 'UA-173106412-1',
+    },
+    resolve: 'gatsby-plugin-google-analytics',
+  },
 ];
 
 module.exports = {
