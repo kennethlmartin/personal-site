@@ -9,21 +9,23 @@ import Layout from '../components/Layout';
 import Helmet from '../components/SEO';
 
 const Avatar = styled.img`
-  background-color: #FFF;
+  background-color: #fff;
+  border: 5px solid #fff;
   border-radius: 50%;
-  border: 5px solid #FFF;
   width: 250px;
 `;
 
 const Content = styled.div`
   align-items: center;
-  background: rgb(195,233,228);
-  background: linear-gradient(
-    0deg,
-    rgba(195, 233, 228, 0.75) 0%,
-    rgba(195, 233, 228, 0.75) 50%,
-    rgba(255, 255, 255, 0) 50%,
-    rgba(255, 255, 255, 0) 100%);
+  background: rgb(195, 233, 228);
+  background:
+    linear-gradient(
+      0deg,
+      rgba(195, 233, 228, 0.75) 0%,
+      rgba(195, 233, 228, 0.75) 50%,
+      rgba(255, 255, 255, 0) 50%,
+      rgba(255, 255, 255, 0) 100%
+    );
   bottom: 0;
   display: flex;
   flex-direction: column;

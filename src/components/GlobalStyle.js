@@ -7,6 +7,7 @@ import React from 'react';
 import { Global, css } from '@emotion/core';
 
 const styles = css`
+  /* stylelint-disable-next-line selector-max-empty-lines */
   ${emotionNormalize}
 
   html {
@@ -17,9 +18,9 @@ const styles = css`
   }
 
   *,
-  *:before,
-  *:after {
-    box-sizing: inherit;
+  *::before,
+  *::after {
+    box-sizing: inher it;
   }
 
   body,

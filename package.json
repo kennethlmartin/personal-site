@@ -13,10 +13,11 @@
     "clean": "gatsby clean",
     "develop": "gatsby develop",
     "lint:eslint": "eslint . --ext .js --cache",
+    "lint:stylelint": "stylelint --syntax css-in-js .",
     "serve": "gatsby serve",
     "start": "npm run develop",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "test:lint": "npm run lint:eslint"
+    "test:lint": "yarn lint:eslint && yarn lint:stylelint"
   },
   "husky": {
     "hooks": {
@@ -28,6 +29,7 @@
     "@commitlint/cli": "9.1.2",
     "@commitlint/config-conventional": "9.1.1",
     "eslint-config-archetype": "4.0.0",
+    "stylelint-config-archetype": "3.0.0",
     "husky": "4.2.5"
   },
   "dependencies": {
